@@ -1,12 +1,11 @@
 """Archivo principal de la aplicación FastAPI."""
-import database.models as model
-
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 
 from database.config import engine
+import database.models as model
 
 app = FastAPI()
 templates = Jinja2Templates(directory="html")
