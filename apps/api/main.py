@@ -1,8 +1,5 @@
 import os
 import uvicorn
-import dotenv
-
-dotenv.load_dotenv()
 
 def str_to_bool(value: str) -> bool:
     """Verifica si se definió la variable debug"""
